@@ -8,21 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var resultCounterDelegate : ResultCounterDelegate?
+    
+    @IBAction func btnIncreaseCounter(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+        resultCounterDelegate = controller
+        present(controller, animated: true, completion: nil)
+        resultCounterDelegate?.increaseCounter()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        
-//        let julio = Person()
-        let robot = Robot()
-        let laundryPerson = LaundryPerson()
-        
-        julio.laundryDelegate = robot
-        julio.laundryDelegate = laundryPerson
-        julio.clothesAreDirty()
-        
     }
 
-
 }
-
