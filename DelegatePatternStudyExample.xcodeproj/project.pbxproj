@@ -16,12 +16,9 @@
 		F474A3A92BD6446E00B3AC01 /* DelegatePatternStudyExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3A82BD6446E00B3AC01 /* DelegatePatternStudyExampleTests.swift */; };
 		F474A3B32BD6446E00B3AC01 /* DelegatePatternStudyExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3B22BD6446E00B3AC01 /* DelegatePatternStudyExampleUITests.swift */; };
 		F474A3B52BD6446E00B3AC01 /* DelegatePatternStudyExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3B42BD6446E00B3AC01 /* DelegatePatternStudyExampleUITestsLaunchTests.swift */; };
-		F474A3C22BD644E300B3AC01 /* LaundryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3C12BD644E300B3AC01 /* LaundryDelegate.swift */; };
-		F474A3C42BD6450700B3AC01 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3C32BD6450700B3AC01 /* Person.swift */; };
-		F474A3C62BD645A000B3AC01 /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3C52BD645A000B3AC01 /* Robot.swift */; };
-		F474A3CA2BD6470000B3AC01 /* LaundryPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3C92BD6470000B3AC01 /* LaundryPerson.swift */; };
-		F474A3CC2BD6EE1200B3AC01 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3CB2BD6EE1200B3AC01 /* ResultViewController.swift */; };
-		F474A3CE2BD6EFFC00B3AC01 /* ResultCounterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3CD2BD6EFFC00B3AC01 /* ResultCounterDelegate.swift */; };
+		F474A3D02BD6F6E700B3AC01 /* ChoiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3CF2BD6F6E700B3AC01 /* ChoiseViewController.swift */; };
+		F474A3D22BD6F7A000B3AC01 /* ChoiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3D12BD6F7A000B3AC01 /* ChoiceDelegate.swift */; };
+		F474A3D42BD6FCCC00B3AC01 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F474A3D32BD6FCCC00B3AC01 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +52,9 @@
 		F474A3AE2BD6446E00B3AC01 /* DelegatePatternStudyExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatePatternStudyExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F474A3B22BD6446E00B3AC01 /* DelegatePatternStudyExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePatternStudyExampleUITests.swift; sourceTree = "<group>"; };
 		F474A3B42BD6446E00B3AC01 /* DelegatePatternStudyExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePatternStudyExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		F474A3C12BD644E300B3AC01 /* LaundryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryDelegate.swift; sourceTree = "<group>"; };
-		F474A3C32BD6450700B3AC01 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		F474A3C52BD645A000B3AC01 /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
-		F474A3C92BD6470000B3AC01 /* LaundryPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaundryPerson.swift; sourceTree = "<group>"; };
-		F474A3CB2BD6EE1200B3AC01 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		F474A3CD2BD6EFFC00B3AC01 /* ResultCounterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCounterDelegate.swift; sourceTree = "<group>"; };
+		F474A3CF2BD6F6E700B3AC01 /* ChoiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiseViewController.swift; sourceTree = "<group>"; };
+		F474A3D12BD6F7A000B3AC01 /* ChoiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceDelegate.swift; sourceTree = "<group>"; };
+		F474A3D32BD6FCCC00B3AC01 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +85,6 @@
 		F474A3852BD6446C00B3AC01 = {
 			isa = PBXGroup;
 			children = (
-				F474A3C52BD645A000B3AC01 /* Robot.swift */,
 				F474A3902BD6446C00B3AC01 /* DelegatePatternStudyExample */,
 				F474A3A72BD6446E00B3AC01 /* DelegatePatternStudyExampleTests */,
 				F474A3B12BD6446E00B3AC01 /* DelegatePatternStudyExampleUITests */,
@@ -115,15 +108,13 @@
 				F474A3912BD6446C00B3AC01 /* AppDelegate.swift */,
 				F474A3932BD6446C00B3AC01 /* SceneDelegate.swift */,
 				F474A3952BD6446C00B3AC01 /* ViewController.swift */,
-				F474A3CB2BD6EE1200B3AC01 /* ResultViewController.swift */,
-				F474A3CD2BD6EFFC00B3AC01 /* ResultCounterDelegate.swift */,
-				F474A3C12BD644E300B3AC01 /* LaundryDelegate.swift */,
-				F474A3C32BD6450700B3AC01 /* Person.swift */,
+				F474A3CF2BD6F6E700B3AC01 /* ChoiseViewController.swift */,
+				F474A3D32BD6FCCC00B3AC01 /* ResultViewController.swift */,
 				F474A3972BD6446C00B3AC01 /* Main.storyboard */,
 				F474A39A2BD6446D00B3AC01 /* Assets.xcassets */,
 				F474A39C2BD6446D00B3AC01 /* LaunchScreen.storyboard */,
 				F474A39F2BD6446D00B3AC01 /* Info.plist */,
-				F474A3C92BD6470000B3AC01 /* LaundryPerson.swift */,
+				F474A3D12BD6F7A000B3AC01 /* ChoiceDelegate.swift */,
 			);
 			path = DelegatePatternStudyExample;
 			sourceTree = "<group>";
@@ -276,15 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F474A3C42BD6450700B3AC01 /* Person.swift in Sources */,
 				F474A3962BD6446C00B3AC01 /* ViewController.swift in Sources */,
 				F474A3922BD6446C00B3AC01 /* AppDelegate.swift in Sources */,
-				F474A3CC2BD6EE1200B3AC01 /* ResultViewController.swift in Sources */,
-				F474A3C22BD644E300B3AC01 /* LaundryDelegate.swift in Sources */,
-				F474A3C62BD645A000B3AC01 /* Robot.swift in Sources */,
-				F474A3CE2BD6EFFC00B3AC01 /* ResultCounterDelegate.swift in Sources */,
-				F474A3CA2BD6470000B3AC01 /* LaundryPerson.swift in Sources */,
 				F474A3942BD6446C00B3AC01 /* SceneDelegate.swift in Sources */,
+				F474A3D02BD6F6E700B3AC01 /* ChoiseViewController.swift in Sources */,
+				F474A3D22BD6F7A000B3AC01 /* ChoiceDelegate.swift in Sources */,
+				F474A3D42BD6FCCC00B3AC01 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

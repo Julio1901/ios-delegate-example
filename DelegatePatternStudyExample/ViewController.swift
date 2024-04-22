@@ -7,15 +7,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ChoiceDelegate {
+
+    @IBOutlet weak var choiseLabel: UILabel!
     
-    var resultCounterDelegate : ResultCounterDelegate?
+    func setChoise(productName: String) {
+        self.choiseLabel.text = productName
+    }
     
+    // An example of how to define a delegated class by navigating to a delegating class anonymously so that it doesn't know who will serve its request.
     @IBAction func btnIncreaseCounter(_ sender: Any) {
-        let controller = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-        resultCounterDelegate = controller
-        present(controller, animated: true, completion: nil)
-        resultCounterDelegate?.increaseCounter()
+        let resultController = storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+        let choiceController = storyboard?.instantiateViewController(withIdentifier: "ChoiseViewController") as! ChoiseViewController
+        choiceController.choiceDelegate = resultController
+        choiceController.modalPresentationStyle = .fullScreen
+        present(choiceController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
