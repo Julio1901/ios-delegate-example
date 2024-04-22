@@ -11,7 +11,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        
+//        let julio = Person()
+        let robot = Robot()
+        let laundryPerson = LaundryPerson()
+        
+        julio.laundryDelegate = robot
+        julio.laundryDelegate = laundryPerson
+        julio.clothesAreDirty()
+        
     }
 
 
